@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  	<meta name="description" content="MDMT">
+    
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- <link href="./css/float-grid.css" rel="stylesheet" type="text/css" /> -->
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- <header role='banner' id='js-image' class='banner bg'> -->
+    <header role='banner' id='js-image'>
+      <div id='js-landing' class='intro'>
+        <img id='js-main-img' class='main_img' src="./img/main copy.jpg">
+      </div>
+    </header>
+
+    <main role='main'>
+      <div id='js-greeting' class='greeting banner'>
+        <br>
+        <section class="font_m inline_center">Minjung & Anthony</section>
+      </div>
+      <div>
+        <audio id='js-audio' loop controls hidden>
+          <source src="./img/bgmusic.m4a" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>  
+      </div>    
+      <div id='js-bottom' class='main_bg'>
+        <div id='js-btn-more' class="main_flex">
+          <button type="submit" onclick="playMusic()" class="btn_black">More Pictures</button>
+        </div>
+        <div id='js-loader' class="loader">
+          <center>
+            <img src="./img/loading-6.gif">
+          </center>
+        </div>
+
+        <!-- <section class='font_m inline_center help' onClick="playMusic()">More Pictures</section> -->
+        <div id='js-more-pic' class='more_pic fi'>
+          <div>
+            <a href='https://www.instagram.com/anthony_philly/'><img id='js-mobile-logo' class='mobile_icon' src='./img/adlogo.png'></a>
+          </div><br><br>
+          <center>
+            <img class='inline_center img_p' src="./img/2.jpg"><BR>
+            <img class='inline_center img_l' src="./img/1.jpg"><BR>
+              <img class='inline_center img_p' src="./img/4.jpg"><BR>
+            <img class='inline_center img_p' src="./img/3.jpg"><BR>
+            <img class='inline_center img_p' src="./img/5.jpg"><BR>
+            <img class='inline_center img_p' src="./img/6.jpg"><BR>
+            <img class='inline_center img_p' src="./img/7.jpg"><BR>
+            <img class='inline_center img_l' src="./img/8.jpg"><BR>
+            <img class='inline_center img_l' src="./img/9.jpg"><BR>
+            <img class='inline_center img_p' src="./img/10.jpg"><BR>
+            <img class='inline_center img_l' src="./img/11.jpg"><BR>
+            <img class='inline_center img_l' src="./img/12.jpg"><BR>
+            <img class='inline_center img_p' src="./img/13.jpg"><BR>
+          </center>
+        </div>
+      </div>
+                
+    </main>
+
+    <div id='js-copy-right' class='copy_right'>© 2022 Anthony Photography</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+
+  </body>
+</html>
