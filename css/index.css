@@ -79,6 +79,13 @@ body {
   border: 1px solid #DDDDDD;
 }
 
+.img_last {
+  margin-bottom: 0 !important;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+
 
 .main_bg {
   z-index: 1;
@@ -142,13 +149,7 @@ body {
   background-position: center;
   background-position: top;
   background-attachment: fixed;
-  /* background-size: 100%; */
-  /* padding: 2rem 0 0rem; */
-  /* display: block; */
-  /* position: relative; */
   background-color: white;
-  /* height: 55rem;  */
-  /* height: 100%;  */
 }
 
 /* Banner Description */
@@ -310,11 +311,6 @@ ul {
   color: #FFF;
   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
 }
-
-.btn_mute {
-  display: none;
-}
-
 
 a,
 a:link, 

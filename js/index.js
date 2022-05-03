@@ -60,7 +60,7 @@ function renderMainImage() {
     $('#js-greeting').css('background-size', '100%');
     $('#js-mobile-logo').css('width', '180px');
     $('.img_p, .img_l').css('padding', '7% 0');
-    $('.img_p, .img_l').css('margin-bottom', '10%');
+    $('.img_p, .img_l').css('margin-bottom', '11%');
   }
 
   if (width < 1600) {
