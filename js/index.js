@@ -8,7 +8,7 @@ function playMusic() {
   window.document.querySelector('audio').play();
   $('#js-btn-more').hide();
   $('#js-greeting').hide();
-  $('body').css('background-color', 'black');
+  // $('body').css('background-color', 'black');
   
   $('#js-loader').css('display', 'block');
 

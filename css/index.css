@@ -139,8 +139,6 @@ body {
 .loader {
   display: none;
   margin-top: -3%;
-  padding-bottom: 30vh;
-  height: 100%;
   background-color: white;
 }
 
