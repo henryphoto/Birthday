@@ -16,6 +16,10 @@ function playMusic() {
 
 }
 
+function stopMusic() {
+  window.document.querySelector('audio').pause();
+  $('#js-btn-mute').hide();
+}
 
 function toggleFullList() {
   const listLength = $('#js-future-meetings').attr("cnt");
