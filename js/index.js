@@ -70,6 +70,9 @@ function renderMainImage() {
     $('.img_l').css('width', '100%');
     $('.img_p').css('width', '90%');
   }
+  const songTitle = Math.random() > 0.5 ? './img/situ.mp3' : './img/madeleine.mp3'
+  $('audio').attr('src', songTitle);
+
 }
 
 function handleEvent() {
