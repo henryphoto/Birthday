@@ -41,6 +41,18 @@ body {
   transform: translateX(-50%);
 }
 
+.more_intro {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.more_intro_img {
+  width: 100%;
+}
+
+
 .greeting {
   background-color: #fff;
   padding-bottom: 6px;
@@ -97,6 +109,14 @@ body {
   display: none;
   /* transition: display 1.4s ease 1s; */
 
+}
+
+.fi_short {
+  -webkit-animation: fadein 0.5s ease-in; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.5s ease-in; /* Firefox < 16 */
+      -ms-animation: fadein 0.5s ease-in; /* Internet Explorer */
+       -o-animation: fadein 0.5s ease-in; /* Opera < 12.1 */
+          animation: fadein 0.5s ease-in;
 }
 
 .fi {

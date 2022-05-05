@@ -4,18 +4,32 @@ function openLiveMeeting() {
   window.open(COMMON.zoomLink, '_blank');
 }
 
+function morePicBanner() {
+
+  $('#js-landing').replaceWith(`
+    <div id='js-landing' class='more_intro'>
+      <img id='js-main-img' class='more_intro_img' src="./img/capemay.jpg">
+    </div>
+  `);
+}
+
 function playMusic() {
   window.document.querySelector('audio').play();
   $('#js-btn-more').hide();
+  $('#js-greeting').hide();
+  // morePicBanner();
+  $('#js-main-img').attr('src', './img/capemay_bw.jpg');
+  $('#js-main-img').addClass('fi_short');
   // $('#js-greeting').hide();
   // $('body').css('background-color', 'black');
   
   $('#js-loader').css('display', 'block');
 
   setTimeout(function () {
-      $('#js-loader').css('display', 'none');
+    $('#js-main-img').attr('src', './img/capemay.jpg');
+    $('#js-loader').css('display', 'none');
       $('#js-more-pic').css('display', 'block');
-    }, 2000);
+    }, 3000);
 
 }
 
@@ -53,9 +67,10 @@ function renderMainImage() {
   $('#js-main-img').css('height', height * heightFactor);
   $('#js-landing').css('bottom', bottomFactor);
   
-  if (isLandscape && width > 1800) {
-    $('#js-mobile-logo').css('margin-left', '10vw');
-    $('#js-copy-right').css('margin-left', '10vw');
+  if (isLandscape && width > 1600) {
+    $('#js-logo-wrap').addClass('main_flex');
+    // $('#js-mobile-logo').css('margin-left', '10vw');
+    // $('#js-copy-right').css('margin-left', '10vw');
   }
 
   if (!isLandscape) {
