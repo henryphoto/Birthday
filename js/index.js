@@ -17,6 +17,7 @@ function playMusic() {
   window.document.querySelector('audio').play();
   $('#js-btn-more').hide();
   $('#js-greeting').hide();
+  $('#js-warning').hide();
   // morePicBanner();
   $('#js-main-img').attr('src', './img/capemay_bw.jpg');
   $('#js-main-img').addClass('fi_short');
