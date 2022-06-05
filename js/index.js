@@ -86,22 +86,34 @@ function renderMainImage() {
     $('.img_l').css('width', '100%');
     $('.img_p').css('width', '90%');
   }
-  const songTitle = Math.random() > 0.5 ? './img/situ.mp3' : './img/madeleine.mp3'
-  $('audio').attr('src', songTitle);
-
 }
 
-function handleEvent() {
-  $('audio').on({
-    play: function() {
-      // $('#js-audio').attr('hidden', 'true');
-      playMusic();
-    }
+function handleEvent() {;
+  const randNum = parseInt((Math.random() * 3), 10);
+  let songTitle = './img/situ.mp3';
+  console.log("AK: rand", randNum);
+  let songTrack = 0;
+  const songList = ['./img/callmemaybe.mp3', './img/situ.mp3', './img/madeleine.mp3'];
+  songList.sort(() => Math.random() - 0.5);
 
+  $('audio').attr('src', songList[songTrack++]);
+console.log("AK: songlist", songList)
+
+  $('audio').on({
+    // play: function() {
+    //   console.log("AK: here")
+    // },
+
+    ended: function() {
+      if (songTrack === songList.length) songTrack = 0;
+      $('audio').attr('src', songList[songTrack++]);
+      window.document.querySelector('audio').play();
+      console.log("AK: stop")
+    }
   });
 }
 
 $(_=> {
+  handleEvent();
   renderMainImage();
-  // handleEvent();
 });
