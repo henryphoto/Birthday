@@ -83,6 +83,11 @@ body {
   justify-content: center;
 }
 
+.wedding_logo {
+  width: 100%;
+  max-width: 580px;
+}
+
 .img_p, .img_l {
   margin-bottom: 3%;
   background-color: white;
@@ -91,13 +96,32 @@ body {
   border: 1px solid #DDDDDD;
 }
 
-.img_last {
-  margin-bottom: 0 !important;
+.img_no {
   padding: 0;
   box-shadow: none;
   border: none;
 }
 
+.no_margin {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.margin_top_neg {
+  margin-top: -2%;
+}
+
+.bg_black {
+  background-color: #000;
+}
+
+.img_last {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
 
 .main_bg {
   z-index: 1;
@@ -230,6 +254,7 @@ h2 {
 .ind_l {
   margin-left: 8%;
 }
+
 .line_sp {
 margin-top: 2rem;
 }
@@ -284,6 +309,10 @@ margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
+.letter_wide {
+  letter-spacing: 0.03rem;   
+}
+
 /* small font */
 .font_s_title {
   margin-top: 2rem;
@@ -331,6 +360,15 @@ ul {
   background-color: #2a2c2d;
   color: #FFF;
   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.btn_mobile {
+  font-size: 0.9rem;
+  padding: 10px 16px 8px;
+}
+
+.warning_mobile {
+  font-size: 12px;
 }
 
 a,
