@@ -96,6 +96,18 @@ body {
   border: 1px solid #DDDDDD;
 }
 
+/* invite css */
+.line_height {
+  line-height: 28px !important;
+}
+.tmp_font {
+  font-size: 1.2rem !important;
+  margin-top: 0 !important;
+  font-weight: 400 !important;
+
+}
+/* invite css end */
+
 .img_no {
   padding: 0;
   box-shadow: none;
