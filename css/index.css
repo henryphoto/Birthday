@@ -105,7 +105,17 @@ body {
 .no_margin {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
 }
+
+.neg_margin {
+  margin-bottom: -1.5% !important;
+  margin-top: -1% !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
 
 .margin_top_neg {
   margin-top: -2%;
@@ -363,7 +373,7 @@ ul {
 }
 
 .btn_mobile {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   padding: 10px 16px 8px;
 }
 
